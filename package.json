@@ -1,0 +1,21 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "- The project contains easy, medium and hard assigments for week 1. - 01-js contains assignments related to JavaScript, things that were covered in the first class. - 02-async-js contains assignments related to asynchronous JavaScript, things that were covered in the second class. - If you have any query then ping us on the Discord server.",
+  "main": "index.js",
+  "scripts": {
+    "array": "node 01-Homework/level-1/Array.js",
+    "number": "node 01-Homework/level-1/Number.js",
+    "string": "node 01-Homework/level-1/String.js",
+    "date": "node 01-Homework/level-2/Date.js",
+    "json": "node 01-Homework/level-2/JSON.js",
+    "math": "node 01-Homework/level-2/Math.js",
+    "object": "node 01-Homework/level-2/Object.js",
+    "timeout-interval": "node 01-Homework/level-3/01.TimeoutIntervals.js",
+    "promise": "node 01-Homework/level-3/02.Promise.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
