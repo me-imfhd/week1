@@ -11,7 +11,7 @@ Object:
 Object.keys(), Object.values(), Object.entries(), hasOwnProperty(), assign(), freeze(), seal(), defineProperty(), etc.
 
 Math:
-round(), ceil(), floor(), random(), max(), min(), pow(), sqrt(), abs(), sin(), cos(), etc.
+round(), ceil(), floor(), random(), max(), min(), pow(), sqrt(), etc.
 
 Date:
 getDate(), getMonth(), getFullYear(), getHours(), getMinutes(), getSeconds(), getTime(), setDate(), setMonth(), setFullYear(), setHours(), setMinutes(), setSeconds(), etc.

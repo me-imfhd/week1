@@ -1,132 +1,137 @@
 // Array handbook
 
-// run each function to see the output, play and learn by doing.
+// Array:   push(), pop(), shift(), unshift(), splice(), slice(),
+// concat(), forEach(), map(), filter(), reduce(), find(), sort()
+
+// Run each function to see the output, play and learn by doing.
 
 // push()
-function pushExample() {
-  let arr = [1, 2, 3];
-  console.log("Before push:", arr);
-  arr.push(4);
+function pushExample(arr, element) {
+  console.log("Original Array:", arr);
+  
+  arr.push(element);
   console.log("After push:", arr);
 }
-pushExample();
+pushExample([1, 2, 3], 4);
 
 // pop()
-function popExample() {
-  let arr = [1, 2, 3];
-  console.log("Before pop:", arr);
+function popExample(arr) {
+  console.log("Original Array:", arr);
+  
   arr.pop();
   console.log("After pop:", arr);
 }
-popExample();
+popExample([1, 2, 3]);
 
 // shift()
-function shiftExample() {
-  let arr = [1, 2, 3];
-  console.log("Before shift:", arr);
+function shiftExample(arr) {
+  console.log("Original Array:", arr);
+  
   arr.shift();
   console.log("After shift:", arr);
 }
-shiftExample();
+shiftExample([1, 2, 3]);
 
 // unshift()
-function unshiftExample() {
-  let arr = [1, 2, 3];
-  console.log("Before unshift:", arr);
-  arr.unshift(0);
+function unshiftExample(arr, element) {
+  console.log("Original Array:", arr);
+  
+  arr.unshift(element);
   console.log("After unshift:", arr);
 }
-unshiftExample();
+unshiftExample([1, 2, 3], 0);
 
 // splice()
-function spliceExample() {
-  let arr = [1, 2, 3];
-  console.log("Before splice:", arr);
-  arr.splice(1, 0, "a");
+function spliceExample(arr, index, deleteCount, ...elements) {
+  console.log("Original Array:", arr);
+  console.log(
+    
+    `index: ${index}, deleteCount: ${deleteCount}, elements: ${elements}`
+  );
+  arr.splice(index, deleteCount, ...elements);
   console.log("After splice:", arr);
 }
-spliceExample();
+spliceExample([1, 2, 3], 1, 0, "a");
 
 // slice()
-function sliceExample() {
-  let arr = [1, 2, 3];
-  console.log("Before slice:", arr);
-  let newArr = arr.slice(1, 2);
+function sliceExample(arr, start, end) {
+  console.log("Original Array:", arr);
+  
+  let newArr = arr.slice(start, end);
   console.log("After slice:", newArr);
 }
-sliceExample();
+sliceExample([1, 2, 3], 1, 2);
 
 // concat()
-function concatExample() {
-  let arr1 = [1, 2, 3];
-  let arr2 = [4, 5, 6];
-  console.log("Before concat:", arr1);
+function concatExample(arr1, arr2) {
+  console.log("Original Arrays:", arr1, arr2);
+  
   let arr3 = arr1.concat(arr2);
   console.log("After concat:", arr3);
 }
-concatExample();
+concatExample([1, 2, 3], [4, 5, 6]);
 
 // forEach()
-function forEachExample() {
-  let arr = [1, 2, 3];
-  console.log("Before forEach:", arr);
+function forEachExample(arr) {
+  console.log("Original Array:", arr);
+  
   arr.forEach(function (item, index) {
     console.log(item, index);
   });
 }
-forEachExample();
+forEachExample([1, 2, 3]);
 
 // map()
-function mapExample() {
-  let arr = [1, 2, 3];
-  console.log("Before map:", arr);
+function mapExample(arr) {
+  console.log("Original Array:", arr);
+  
   let newArr = arr.map(function (item) {
     return item * 2;
   });
   console.log("After map:", newArr);
 }
-mapExample();
+mapExample([1, 2, 3]);
 
 // filter()
-function filterExample() {
-  let arr = [1, 2, 3, 4, 5];
-  console.log("Before filter:", arr);
+function filterExample(arr) {
+  console.log("Original Array:", arr);
+  
   let newArr = arr.filter(function (item) {
     return item > 3;
   });
   console.log("After filter:", newArr);
 }
-filterExample();
+filterExample([1, 2, 3, 4, 5]);
 
 // reduce()
-function reduceExample() {
-  let arr = [1, 2, 3, 4, 5];
-  console.log("Before reduce:", arr);
+function reduceExample(arr) {
+  console.log("Original Array:", arr);
+  
   let sum = arr.reduce(function (total, item) {
     return total + item;
   }, 0);
   console.log("After reduce:", sum);
 }
-reduceExample();
+reduceExample([1, 2, 3, 4, 5]);
 
 // find()
-function findExample() {
-  let arr = [1, 2, 3, 4, 5];
-  console.log("Before find:", arr);
+function findExample(arr) {
+  console.log("Original Array:", arr);
+  
   let found = arr.find(function (item) {
     return item > 3;
   });
   console.log("After find:", found);
 }
-findExample();
+findExample([1, 2, 3, 4, 5]);
 
 // sort()
-function sortExample() {
-  let arr = [5, 2, 3, 4, 1];
-  console.log("Before sort:", arr);
+function sortExample(arr) {
+  console.log("Original Array:", arr);
+  
   arr.sort(function (a, b) {
     return a - b;
   });
   console.log("After sort:", arr);
 }
-sortExample();
+sortExample([5, 2, 3, 4, 1]);
