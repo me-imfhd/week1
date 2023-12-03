@@ -13,6 +13,7 @@
     "object": "node 01-Homework/level-2/Object.js",
     "timeout-interval": "node 01-Homework/level-3/01.TimeoutIntervals.js",
     "promise": "node 01-Homework/level-3/02.Promise.js",
+    "fetch": "node 01-Homework/level-3/03.Fetch.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
